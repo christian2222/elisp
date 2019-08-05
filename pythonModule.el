@@ -272,7 +272,7 @@
     (setq elementVar (car varList))
 					; awk ergebnisse.txt and grep then head afterwards
 					; construct a complex commandline
-    (setq grepStart "awk \'{ print $2 \"=\" $5 }\' ergebnisse.txt | grep \'")
+    (setq grepStart "awk \'{ print $2 \"=\" $5 }\' results.txt | grep \'")
     (setq grepCommand (concat grepStart elementVar ".*\' | head -1"))
     ;(insert grepCommand)
     ;(insert "\n")
