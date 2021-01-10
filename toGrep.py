@@ -1,7 +1,3 @@
-\documentclass{article}
-\usepackage{pythontex}
-\usepackage{amsmath}
-\begin{document}
 
 \begin{pycode}
 from math import *
@@ -37,4 +33,3 @@ This is so
 \begin{eqnarray*}
   \sum_i \sum_j x_{ij} = \py{complexVariable}\cdot\py{a}
 \end{eqnarray*}
-\end{document}

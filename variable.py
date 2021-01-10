@@ -1,0 +1,9 @@
+\py{a}
+\py{b}
+\py{c}
+\py{2**16}
+\py{b}
+\py{complexVariable}
+\py{complexVariable}
+\py{complexVariable}
+\py{a}

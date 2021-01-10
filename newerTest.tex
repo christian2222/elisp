@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{pythontex}
+\usepackage{amsmath}
+\begin{document}
+
+\begin{pycode}
+from math import *
+
+a = 3.0
+
+b = 7.0
+
+c = sqrt(a**2 + b**2)
+complexVariable = 70
+\end{pycode}
+
+
+
+
+
+
+When $a = \py{a}$ and $b = \py{b}$, is  $c = \py{c}$.i\\% regexp found:a=3.0|b=7.0|c=7.61577310586|a=3.0||
+2 powered by 16 is $\py{2**16}$.\\% regexp found:2**16=65536|a=3.0||
+Variable b war $\py{b}$.\\% regexp found:b=7.0|a=3.0||
+\\
+\\
+Hello
+\begin{equation*}
+\int_{xy} f(z) dz = \py{complexVariable}% regexp found:complexVariable=70|a=3.0||
+\end{equation*}
+
+This is so
+\begin{eqnarray*}
+  \sum_i \prod_j x_{ij} = \py{complexVariable}% regexp found:complexVariable=70|a=3.0||
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \sum_i \sum_j x_{ij} = \py{complexVariable}\cdot\py{a}% regexp found:complexVariable=70|a=3.0|a=3.0||
+\end{eqnarray*}
+\end{document}
+
